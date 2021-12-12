@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+<section class = "setup">
+        <nav>
+            <a href="https://www.google.com/maps/place/North+Star+Satellite+%26+Video/@40.073509,-75.526821,15z/data=!4m5!3m4!1s0x0:0x2b3ba721963180de!8m2!3d40.0735548!4d-75.5270227"><img src="Nortstar2.png" class="logo"></img></a>
+            <div class ="navbar" id="navBars">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="client.html">CLIENTS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul> 
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Contact Us</h1>
+        <p><i class="fa fa-envelope-o"></i> john.loudis.Nstar@comcast.net<br><br>
+            <i class="fa fa-phone"></i> (610) 407-9290</p>
+
+</section>
+
+
+<section class="location">
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12212.341264320987!
+    2d-75.526821!3d40.073509!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2b3ba721963180de!2
+    sNorth%20Star%20Satellite%20%26%20Video!5e0!3m2!1sen!2sus!4v1631767536092!5m2!1sen!2s
+    us" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</section>
+
+<section class="contact-us">
+    <div class="row">
+        <div class="contact-col">
+            <h1>Contact Form</h1>
+
+            <form action="from-handler.php" method="post">
+
+                <input type="text" name="name" placeholder="Enter your name" required>
+                <input type="email" name="email" placeholder="Enter your email address" required>
+                <input type="text" name="subject" placeholder="Enter your subject" required>
+                <textarea rows="8" name="message" placeholder="Message" required></textarea>
+                <button type="submit" class="button2">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+</section>
+    
+
+
+<!------- JS for menu toggle ------>
+<script>
+
+    var navBars = document.getElementById("navBars");
+    function showMenu() {
+        navBars.style.right = "0";
+
+    }
+
+    function hideMenu() {
+        navBars.style.right = "-200px";
+    }
+
+</script>
+    
+</body>
+</html>
