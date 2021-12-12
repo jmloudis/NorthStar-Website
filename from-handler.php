@@ -1,3 +1,5 @@
+<!-- Change the info to match your cleints credentials and what you want to receive via email -->
+
 <?php
 $name = $_POST['name'];
 $visitor_email = $_POST['email'];
@@ -13,7 +15,7 @@ $email_body = "User Name: $name.\n".
                 "Subject: $subject.\n".
                 "User Message: $message.\n";
 
-$to = 'jmloudis@gmail.com';
+$to = 'Enter your email here';
 
 $headers = "From: $email_from \r\n";
 
